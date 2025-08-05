@@ -595,7 +595,11 @@ select {
     overflow: hidden;
     height: 280px;
     transition: background-color 0.2s ease;
-    padding-top: 16px;
+    padding-top: 40px;
+}
+
+.header-collapsed {
+    margin-top: -32px !important;
 }
 
 /* Common transitions for header elements */
@@ -1549,7 +1553,7 @@ select {
     gap: var(--spacing-sm);
     padding: var(--spacing-md);
     font-family: var(--font-sans);
-    line-height: 1;
+    line-height: 1.5;
     margin: 0;
     position: relative;
     cursor: pointer;
@@ -2975,4 +2979,70 @@ button:focus-visible,
     outline: 2px solid var(--sand-11);
     width: auto;
     text-align: center;
+}
+
+.source-pdf {
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.9rem;
+    color: var(--sand-11);
+    margin: 0;
+    padding: 0.5rem 0.9rem;
+    border-radius: 20px;
+    background-color: var(--sand-2);
+    border: 1px solid var(--sand-5);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    width: fit-content;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.source-pdf i {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+    display: inline-block;
+    color: var(--sand-11);
+}
+
+.source-pdf:hover {
+    background-color: var(--sand-3);
+    border-color: var(--sand-6);
+    color: var(--sand-12);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+:root[data-theme="dark"] .source-pdf {
+    background-color: var(--sand-3);
+    color: var(--sand-11);
+    border-color: var(--sand-6);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+:root[data-theme="dark"] .source-pdf:hover {
+    background-color: var(--sand-4);
+    border-color: var(--sand-7);
+    color: var(--sand-12);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-reference-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.pdf-reference-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.9rem;
+    color: var(--sand-11);
+    flex: 1;
+    min-width: 250px;
+}
+
+:root[data-theme="dark"] .pdf-reference-text {
+    color: var(--sand-11);
 }

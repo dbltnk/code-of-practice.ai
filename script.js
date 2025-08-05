@@ -1912,7 +1912,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const dd = document.querySelector(`.glossary-list dt:nth-child(${2 * number - 1}) + dd`);
         return {
             term: dt?.textContent.trim(),
-            definition: dd?.textContent.trim()
+            definition: dd?.innerHTML.trim()
         };
     }
 
@@ -1969,7 +1969,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!term || !definition) return;
 
         popup.querySelector('.glossary-popup-term').textContent = term;
-        popup.querySelector('.glossary-popup-definition').textContent = definition;
+        popup.querySelector('.glossary-popup-definition').innerHTML = definition;
 
         positionPopup(target);
         popup.classList.add('show');

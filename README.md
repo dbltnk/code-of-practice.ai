@@ -1,6 +1,6 @@
 # code-of-practice.ai
 
-This is an inofficial, best-effort service to make the third draft of the EU AI Act [GPAI Code of Practice](https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice) more accessible to all working group participants and observers. While I strive for accuracy, this is **not an official legal document**. Always refer to the official PDF document provided by the AI Office for the authoritative version. Any discrepancies between this site and the official document should be considered errors on my part. The canonical version of this project is hosted at [https://code-of-practice.ai/](https://code-of-practice.ai/).
+This is an inofficial, best-effort service to make the final draft of the EU AI Act [GPAI Code of Practice](https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice) more accessible to all working group participants and observers. While I strive for accuracy, this is **not an official legal document**. Always refer to the official PDF document provided by the AI Office for the authoritative version. Any discrepancies between this site and the official document should be considered errors on my part. The canonical version of this project is hosted at [https://code-of-practice.ai/](https://code-of-practice.ai/).
 
 ## Credits & License
 
